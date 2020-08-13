@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/detailsImageViewId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/pizza"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/detailsItemNameTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Name"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailsDescriptionTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="19sp"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/detailsDateTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 July 2020"
+        android:textSize="19sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/updateButtonId"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Update"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:onClick="updateImageButton"/>
+
+        <Button
+            android:id="@+id/deleteButtonId"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Delete"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:onClick="deleteImageButton"/>
+    </RelativeLayout>
+
+</LinearLayout>
